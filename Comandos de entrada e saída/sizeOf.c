@@ -21,3 +21,7 @@ void main(){
     printf("%d\n", g);
 
 }
+
+//sizeof nos permite saber a quantidade de memória alocada em bytes
+//sizeof nome_da_variavel;
+//sizeof(nome do tipo);
