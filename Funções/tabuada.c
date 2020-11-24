@@ -1,4 +1,4 @@
-//Tabuada
+//Tabuada utilizando os conceitos de funções com e sem retorno
 #include <stdio.h>
 
 void cabecalho(void);

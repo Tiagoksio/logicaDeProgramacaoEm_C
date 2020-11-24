@@ -1,3 +1,4 @@
+//Algoritmo que calcula o imc.
 #include <stdio.h>
 
 int main () {
@@ -11,8 +12,8 @@ int main () {
 
     imc = peso/(altura*altura);
    
-    printf ("Seu imc é: %0.2f\n", imc);    
-     // o 0.2 entre o % e o f para exibir apenas 2 casas decimais.
+    printf ("Seu imc é: %.2f\n", imc);    
+     // o .2 entre o % e o f para exibir apenas 2 casas decimais.
     
     return 0;
 }
