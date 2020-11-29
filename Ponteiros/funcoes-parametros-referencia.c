@@ -1,4 +1,4 @@
-//Ao passar um parâmetro em uma função, ele receberá o valor da variável global;
+//Ao passar um parâmetro em uma função, ele receberá o valor da variável da função principal;
 //Para que seja passado a referência, utilizamos o ponteiro, passando o endereço para a funçao
 #include <stdio.h>
 
