@@ -10,7 +10,7 @@ void main(){
     printf("%f\n", resultado);
 
     /*Para que a divisão entre os inteiros seja atribuída calculando as casas decimais,
-    é necessária a operação de 'casting', que efetuará uma conversar para outro tipo */
+    é necessária a operação de 'casting', que efetuará uma conversão para outro tipo */
     resultado = (float)x/y;
     printf("%f\n", resultado);
 
