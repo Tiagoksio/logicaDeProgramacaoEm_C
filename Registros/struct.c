@@ -13,6 +13,7 @@ void main (){
     	int numero;
     	float nota;        
 	}aluno; //Pode criar a variável depois do colchete e antes do ponto e virgura...
+	// Também seria possível atribuir o valor da variável "aluno" dessa forma " aluno = {Pedro, 2, 9.5} ou escrever ".numero, .nota" para especificar onde deseja atribuir.
 
 	//... ou declarando da mesma forma das outras variáveis: struct ficha_aluno aluno; 
 	// 'aluno' é o nome da variável e o tipo struct ficha_aluno.
