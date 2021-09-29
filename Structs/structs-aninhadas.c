@@ -9,34 +9,34 @@ void cadastroEndereco();
 void cadastroDataNascimento();
 void clienteCadastrados();
 
-struct tp_endereco
+typedef struct 
 {
 	char estado[5];
 	char cidade[30];
 	int cep;
 	int numero;
-};
-struct tp_data_nascimento
+} tp_endereco;
+typedef struct 
 {
 	int dia;
 	int mes;
 	int ano;
-};
-struct tp_cadastro_cliente
+} tp_data_nascimento;
+typedef struct 
 {
 	char nomeCliente[40];
 	int telefone;
-	struct tp_endereco endereco;
-	struct tp_data_nascimento dataDeNascimento;	
-};
-struct tp_cadastro_cliente cadCliente[2];
+	tp_endereco endereco;
+	tp_data_nascimento dataDeNascimento;	
+}tp_cadastro_cliente;
+tp_cadastro_cliente cadCliente[2];
 
 void main(){
 	int contador;
 	
 	cabecalhoCadastro();
 
-	for (contador = 0; contador <= 1; contador++)
+	for (contador = 0; contador < 2; contador++)
 	{	
 		cadastroCliente(&contador);
 		rodape();

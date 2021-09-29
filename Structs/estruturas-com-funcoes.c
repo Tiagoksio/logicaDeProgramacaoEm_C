@@ -3,19 +3,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-struct data
+typedef struct
 {
     int dia;
     int mes;
     int ano;
-};
-struct data proximo_aniversario(struct data calc_aniversario);
+} data;
+
+data proximo_aniversario(data calc_aniversario);
 int qntDiasMes(int mes);
 
 int main(void){
             
-    struct data nascimento;
-    struct data aniversario;
+    data nascimento;
+    data aniversario;
     
     printf("Informe sua data de nascimento (DD/MM/AAAA)\n");
     scanf("%d%*c%d%*c%d", &nascimento.dia, &nascimento.mes, &nascimento.ano);
@@ -33,7 +34,7 @@ int main(void){
     
 }
 
-struct data proximo_aniversario(struct data calc_aniversario){
+data proximo_aniversario(data calc_aniversario){
     time_t relogio;
     relogio = time(NULL);
     struct tm tm = *localtime(&relogio);
