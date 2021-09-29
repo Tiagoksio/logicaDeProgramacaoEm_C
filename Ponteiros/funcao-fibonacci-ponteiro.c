@@ -21,8 +21,7 @@ void main(){
 void fibonacci(int *ptrNumA, int *ptrNumB){
     int somaAB; 
     
-    somaAB = *ptrNumA +*ptrNumB;
+    somaAB = *ptrNumA + *ptrNumB;
     *ptrNumB = *ptrNumA;
     *ptrNumA = somaAB;
-    return;
 }
