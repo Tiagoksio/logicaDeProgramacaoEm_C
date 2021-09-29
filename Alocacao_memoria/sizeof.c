@@ -3,9 +3,16 @@
 //sizeof(nome do tipo);
 #include<stdio.h>
 
+struct x {
+    int a;
+    int b;
+    int c;
+};
+
 void main(){
     int a, b, c, d, e, f, g;
-  
+    int vetor[10];
+    struct x estrutura;
 
     a=sizeof(int);
     b=sizeof(long);
@@ -22,5 +29,6 @@ void main(){
     printf("%d\n", e);
     printf("%d\n", f);
     printf("%d\n", g);
-
+    printf("%d\n", sizeof(vetor)); //imprime o tamanho em bytes do vetor, como são 10 posições de 4 bytes(valor do int) -> 40 bytes
+    printf("%d\n", sizeof(estrutura)); // 3 variáveis int, totalizando 12 bytes
 }
